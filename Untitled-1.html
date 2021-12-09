@@ -1,0 +1,42 @@
+
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.10.2.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+		$('button.one').click(function(){
+			$('img').fadeIn(5000);
+			});
+		$('img').hover(function(){
+				$(this).css({
+				'width':'100px',
+				'height':'100px'
+					},function(){
+				$('img').css({
+				'width':'500px',
+				'height':'500px'})
+				});
+			});
+		$('button.two').click(function(){
+			$('div').css({
+				'background-color':'red',
+				'border':'5px solid yellow',
+				'width':'100px',
+				'height':'100px'
+				});
+			});	
+	});
+</script>
+<style type="text/css">
+img{
+	display:none}
+</style>
+</head>
+<body>
+<div></div>
+<img src="Desert.jpg" />
+<button class="one">click me</button>
+<button class="two">click me</button>
+</body>
+</html>
